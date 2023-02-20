@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mynerve', cursive;
+}
+
+/* ------------------------HEADER--------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 10px 25px;
+    background-color: #8b6161;
+}
+header span h1  {
+    background-color: #8b6161;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+header nav{
+    display: flex;
+    gap: 40px;
+    background-color: #8b6161;
+}
+header nav a {
+    background-color: #8b6161;
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 4px;
+}
+a {
+    text-decoration: none;
+}
+
+/* -------------------------MAIN---------------------------- */
+main {
+    display: flex;
+    justify-content: space-around;
+}
+main .img img {
+    width: 110%;
+}
+.contenido {
+    margin: 5% ;
+    text-align: -moz-center;
+    width: 135%;
+}
+.contenido div h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+main .contenido div h2 {
+    font-size: 3rem ;
+    text-align: center;
+}
+
+main .contenido .pharagraph {
+    margin: 5%;
+    height: 250px;
+    overflow: scroll;
+}
+
+main .contenido .pharagraph p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+/* ICONS-END-CONTENT */
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    border-radius: 100%;
+    text-decoration: none;
+    background-color: none;
+
+
+}
+
+/* -----------------------------FOOTER--------------------- */
+
+footer {
+    display: flex;
+    background-color: rgb(82, 50, 50);
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 4.75rem;
+    align-items:center;
+    
+}
+
+footer div .span span {
+    font-size: 5rem;
+}
+
+.redes div {
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
+    background-color:  rgb(82, 50, 50);
+}
+
+
+
+
+
+
