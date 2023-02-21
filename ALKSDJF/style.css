@@ -184,12 +184,19 @@ footer .data div p {
 
     footer {
         flex-direction: column;
-        align-content: center;
-        /* align-items: flex-end; */
+        position: absolute;
+        bottom: -110%;
+        width: 96vw;
+        align-items: center;
     }
 
     footer div {
         justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    footer .data div p {
+        text-align: center;
     }
 }
 
