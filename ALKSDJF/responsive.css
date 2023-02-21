@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mynerve', cursive;
+}
+
+/* -----------HEADER----------- */
+header {
+    background-color: #6d4646;
+    display: flex;
+    justify-content: start;
+}
+
+header nav {
+    display: none;
+}
+
+header .container-icon-menu {
+    margin-top: .5rem;
+}
+
+header .container-icon-menu a {
+    color: white;
+    font-size: 1.7rem;
+    margin:  1rem;
+}
+
+header span h1  {
+    background-color: #6d4646;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* ----------------MAIN-------------- */
+main .img {
+    width: 100%;
+}
+
+main .img img {
+    width: 100%;
+}
+
+.title-container {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+main .contenido {
+    align-content: center;
+    margin-bottom: 10%;
+}
+
+.pharagraph {
+    padding: 0 10%;
+    text-align: justify;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+.icons button {
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.icons button a {
+    color: black;
+}
+
+.icons div {
+    display: flex;
+    gap: 25%;
+    position: relative;
+    right: 10%;
+}
+
+/* ---------FOOTER------- */
+footer {
+    background-color: rgb(82, 50, 50);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer .redes div {
+    margin: 3% 2%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes div a {
+    color: white;
+}

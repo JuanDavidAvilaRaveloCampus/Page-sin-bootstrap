@@ -5,20 +5,22 @@
 
 body {
     font-family: 'Mynerve', cursive;
-    flex-wrap: wrap;
-    min-width: 1150px;
-    flex-wrap: wrap;
+    width: 100vh 100vw;
 }
 
 /* ------------------------HEADER--------------------------- */
 
+.container-icon-menu {
+    display: none;
+}
+
 header {
     display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    padding: 10px 25px;
+    justify-content: space-around;
     background-color: #6d4646;
+    padding: 2%;
 }
+
 header span h1  {
     background-color: #6d4646;
     font-family: 'Press Start 2P', cursive;
@@ -41,7 +43,6 @@ header nav a:hover {
     color: rgb(228, 228, 228);
 }
 
-
 a {
     text-decoration: none;
 }
@@ -49,18 +50,19 @@ a {
 /* -------------------------MAIN---------------------------- */
 main {
     display: flex;
-    justify-content: space-around;
-    
+    height: 80vh;
+    /* align-content: space-between; */
 }
-
-
 
 main .img img {
-    width: 110%;
+    width: 100%;
+    position: relative;
+    top: -64px;
 }
+
 .contenido {
-    margin: 5% ;
-    text-align: -moz-center;
+    margin: 2% ;
+    /* text-align: -moz-center; */
     width: 135%;
 }
 .contenido div h2 {
@@ -74,14 +76,12 @@ main .contenido div h2 {
 
 main .contenido .pharagraph {
     margin: 3% 10%;
-    height: 250px;
+    height: 450px;
+    font-size: 2rem;
+    text-align: justify;
     overflow: scroll;
 }
 
-main .contenido .pharagraph p {
-    font-size: 2rem;
-    text-align: justify;
-}
 
 /*------ ICONS-END-CONTENT ---------- */
 
@@ -116,34 +116,82 @@ button {
 /* --------------------------FOOTER--------------------- */
 
 footer {
+    background-color:rgb(82, 50, 50) ;
     display: flex;
-    background-color: rgb(82, 50, 50);
     justify-content: space-between;
-    padding: 0 2rem;
-    height: 4.75rem;
-    align-items:center;
+    align-items: center;
     color: white;
-    font-size: 1.5rem;
-}
-
-
-footer div .span span {
-    font-size: 5rem;
-}       
-
-.redes div {
-    display: flex;
-    gap: 3rem;
     font-size: 2rem;
-    background-color:  rgb(82, 50, 50);
-}   
-
- .redes div .redes-icons a {
-    color: white;
+    padding: 2%;
 }
 
+footer .redes div {
+    display: flex;
+    gap: 3rem   ;
+    /* margin-left: 5rem; */
+}
 
+footer .redes div .redes-icons a {
+    color: white;
+}
+/* 
+ footer .span {
+    position: absolute;
+    bottom: -7%;
+    left: 2%;
+}
 
+footer .redes {
+    position: absolute;
+    right: 38.5%;
+    bottom: -7%;
+} */
+
+footer .data div p {
+    font-size: 1.4rem;
+    text-align: end;
+}
+/* ----------------MEDIA--------------- */
+
+@media(max-width:1160px) {
+    header .container-icon-menu {
+        display: block;
+        font-size: 2rem;
+    }
+
+    header .container-icon-menu a {
+        color: white;
+    }
+    
+    header nav {
+        display: none;
+    }
+
+    main .contenido .pharagraph {
+        margin: 1% 5%;
+        height: 450px;
+        font-size: 2rem;
+        text-align: left;
+        overflow: scroll;
+    }
+}
+
+@media(max-width:1050px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+        align-content: center;
+        /* align-items: flex-end; */
+    }
+
+    footer div {
+        justify-content: center;
+    }
+}
 
 
 
