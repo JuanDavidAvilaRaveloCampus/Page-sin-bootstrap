@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    
+    
 }
 
 body {
     font-family: 'Mynerve', cursive;
-    width: 100vh 100vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* ------------------------HEADER--------------------------- */
@@ -14,32 +17,33 @@ body {
     display: none;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-around;
     background-color: #6d4646;
     padding: 2%;
+    width: 96%;
 }
 
-header span h1  {
+.header span h1  {
     background-color: #6d4646;
     font-family: 'Press Start 2P', cursive;
     color: white;
 }
-header nav{
+.header #desktop{
     display: flex;
     gap: 40px;
     height: auto;
     background-color: transparent;
 }
-header nav a {
+.header #desktop a {
     background-color: transparent;
     color: white;
     font-size: 1.6rem;
     margin-top: 4px;
 }
 
-header nav a:hover {
+.header #desktop a:hover {
     color: rgb(228, 228, 228);
 }
 
@@ -47,10 +51,14 @@ a {
     text-decoration: none;
 }
 
+#mobile {
+    visibility: hidden;
+}
+
 /* -------------------------MAIN---------------------------- */
 main {
     display: flex;
-    height: 80vh;
+    position: absolute;
     /* align-content: space-between; */
 }
 
@@ -64,6 +72,8 @@ main .img img {
     margin: 2% ;
     /* text-align: -moz-center; */
     width: 135%;
+    position: relative;
+    right: 0;
 }
 .contenido div h2 {
     font-family: 'Press Start 2P', cursive;
@@ -115,23 +125,27 @@ button {
 
 /* --------------------------FOOTER--------------------- */
 
-footer {
+.footer {
     background-color:rgb(82, 50, 50) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-size: 2rem;
-    padding: 2%;
+    font-size: 1.5rem;
+    padding: 1% 2%;
+    height: max-content;
+    position: absolute;
+    width: 96%;
+    bottom: 0;
 }
 
-footer .redes div {
+.footer .redes div {
     display: flex;
     gap: 3rem   ;
     /* margin-left: 5rem; */
 }
 
-footer .redes div .redes-icons a {
+.footer .redes div .redes-icons a {
     color: white;
 }
 /* 
@@ -147,24 +161,25 @@ footer .redes {
     bottom: -7%;
 } */
 
-footer .data div p {
+.footer .data div p {
     font-size: 1.4rem;
     text-align: end;
 }
 /* ----------------MEDIA--------------- */
 
-@media(max-width:1160px) {
-    header .container-icon-menu {
+@media(max-width:1250px) {
+    .header .container-icon-menu {
         display: block;
         font-size: 2rem;
     }
 
-    header .container-icon-menu a {
+    .header .container-icon-menu a {
         color: white;
     }
     
-    header nav {
+    .header nav {
         display: none;
+        padding: 0 5%;
     }
 
     main .contenido .pharagraph {
@@ -174,24 +189,177 @@ footer .data div p {
         text-align: left;
         overflow: scroll;
     }
+
+    #desktop {
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        z-index: -10;
+    }
 }
 
-@media(max-width:1050px) {
+@media(max-width:1120px) {
     main {
         display: flex;
         flex-wrap: wrap;
+        position: relative;
     }
 
-    footer {
+    .footer {
         flex-direction: column;
         align-content: center;
         /* align-items: flex-end; */
+        position: absolute;
+        bottom: -137%;
+        gap: 40px;
+        
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
     }
 
     footer div {
         justify-content: center;
     }
+
+    .contenido {
+        margin-bottom: 12%;
+    }
+}
+
+@media(max-width:1040px) {
+    .footer {
+        flex-direction: column;
+        align-content: center;
+        /* align-items: flex-end; */
+        position: absolute;
+        bottom: -117%;
+        gap: 40px;
+        
+    }
 }
 
 
+@media(max-width:800px) {
 
+    main .contenido .pharagraph {
+        margin: 3% 10%;
+        height: 450px;
+        font-size: 1.5rem;
+        text-align: justify;
+        overflow: visible;
+    
+    }
+
+    .icons {
+        margin-top: 10%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-content: center;
+        /* align-items: flex-end; */
+        position: absolute;
+        bottom: -100%;
+        gap: 40px;
+    }
+}
+
+@media(max-width:660px) {
+    .icons {
+        margin-top: 20%;
+    }
+}
+
+@media(max-width:600px) {
+    .icons {
+        margin-top: 30%;
+    }
+}
+
+@media(max-width:570px) {
+    .icons {
+        margin-top: 40%;
+    }
+}
+
+@media(max-width:550px) {
+    .icons {
+        margin-top: 60%;
+    }
+
+    main .contenido div h2 {
+        font-size: 2rem;
+    }
+}
+@media(max-width:470px) {
+    .icons {
+        margin-top: 80%;
+    }
+}
+
+@media(max-width:450px) {
+    .icons {
+        margin-top: 100%;
+    }
+}
+
+@media(max-width:450px) {
+    .icons {
+        margin-top: 110%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:425px) {
+    .icons {
+        margin-top: 120%;
+    }
+
+}
+@media(max-width:411px) {
+    .icons {
+        margin-top: 130%;
+    }
+
+}
+@media(max-width:411px) {
+    .icons {
+        margin-top: 150%;
+    }
+
+}
+
+@media(max-width:390px) {
+    .icons {
+        margin-top: 170%;
+    }
+    .footer {
+        bottom: -120%;
+    }
+
+}
+
+@media(max-width:380px) {
+    .icons {
+        margin-top: 170%;
+    }
+
+}
+@media(max-width:364px) {
+    .icons {
+        margin-top: 180%;
+    }
+
+}
+@media(max-width:350px) {
+    .icons {
+        margin-top: 230%;
+    }
+
+}
