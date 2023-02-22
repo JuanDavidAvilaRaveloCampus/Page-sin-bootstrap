@@ -218,10 +218,19 @@ footer .redes {
     .header {
         display: flex;
         justify-content: space-between;
+        position: absolute;
+        bottom: -110%;
+        width: 96vw;
+        align-items: center;
     }
 
     footer div {
         justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    footer .data div p {
+        text-align: center;
     }
 
     .contenido {
