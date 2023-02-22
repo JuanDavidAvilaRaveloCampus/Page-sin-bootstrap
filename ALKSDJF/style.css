@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     
@@ -52,6 +52,7 @@ a {
 }
 
 #mobile {
+    display: none;
     visibility: hidden;
 }
 
@@ -148,18 +149,6 @@ button {
 .footer .redes div .redes-icons a {
     color: white;
 }
-/* 
- footer .span {
-    position: absolute;
-    bottom: -7%;
-    left: 2%;
-}
-
-footer .redes {
-    position: absolute;
-    right: 38.5%;
-    bottom: -7%;
-} */
 
 .footer .data div p {
     font-size: 1.4rem;
@@ -218,7 +207,6 @@ footer .redes {
     .header {
         display: flex;
         justify-content: space-between;
-        position: absolute;
         bottom: -110%;
         width: 96vw;
         align-items: center;
@@ -252,7 +240,7 @@ footer .redes {
 
 
 @media(max-width:800px) {
-
+    over
     main .contenido .pharagraph {
         margin: 3% 10%;
         height: 450px;
@@ -370,5 +358,37 @@ footer .redes {
     .icons {
         margin-top: 230%;
     }
+}
 
+@media(max-width:315px) {
+    
+    main .img img {
+        width: 100%;
+        position: relative;
+        top: -30px;
+    }
+    
+    
+    
+    .icons {
+        margin-top: 250%;
+    }
+
+    main .contenido .pharagraph {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .container-icons button {
+        display: grid;
+        flex-wrap: wrap;
+    }
+
+
+    
 }
